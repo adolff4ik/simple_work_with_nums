@@ -1,13 +1,13 @@
-n = int(input('Розмір вкладу:'))
+deposit = int(input('Розмір вкладу:'))
 
 years = int(input('Кількість років:'))
 
-def bank (n, years):
+def bank (deposit, years):
     i = 0
     while i < int(years):
-        n = float(n) + float(n / 10)
-        print(n)
+        deposit = float(deposit) + float(deposit / 10)
+        print(deposit)
         i += 1
-    return n
+    return deposit
 
-bank (n, years)
+bank (deposit, years)
