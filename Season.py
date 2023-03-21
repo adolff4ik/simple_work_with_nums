@@ -1,7 +1,7 @@
-season = input('Введіть номер місяця:')
+season = input('Введіть номер місяця: ')
 
 def show_season ():
-    if int(season) < 3:
+    if int(season) < 3 or int(season) == 12:
         result = 'winter'
     elif int(season) < 6:
         result = 'sprin'
@@ -9,8 +9,7 @@ def show_season ():
         result = 'summer'
     elif int(season) < 12:
         result = 'autumn'
-    else: result = 'winter'
+    else: result = 'ti lox'
     print(result)
-    return result
 
 show_season ()
